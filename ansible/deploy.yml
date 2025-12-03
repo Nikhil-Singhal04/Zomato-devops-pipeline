@@ -66,14 +66,22 @@
       ignore_errors: yes
 
     # ==========================================
-    # 4. CLEAN UP OLD IMAGES (OPTIONAL)
+    # 4. REMOVE DATABASE VOLUME FOR FRESH SEEDING
+    # ==========================================
+    - name: Remove database volume to force fresh seeding
+      shell: docker volume rm zomato-app_dbdata || true
+      ignore_errors: yes
+      register: volume_removal
+
+    # ==========================================
+    # 5. CLEAN UP OLD IMAGES (OPTIONAL)
     # ==========================================
     - name: Remove old Docker images to save space
       shell: docker image prune -af --filter "until=24h"
       ignore_errors: yes
 
     # ==========================================
-    # 5. START NEW CONTAINERS
+    # 6. START NEW CONTAINERS
     # ==========================================
     - name: Start application with docker-compose
       shell: |
@@ -86,7 +94,7 @@
         VITE_API_BASE: "http://{{ ansible_host }}:4000"
 
     # ==========================================
-    # 6. WAIT FOR SERVICES TO BE HEALTHY
+    # 7. WAIT FOR SERVICES TO BE HEALTHY
     # ==========================================
     - name: Wait for database to be healthy
       shell: docker compose ps db | grep "healthy" || docker-compose ps db | grep "healthy"
