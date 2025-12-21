@@ -52,7 +52,7 @@ This project demonstrates how modern applications are:
 
 ---
 
-## 🔄 CI/CD Workflow (Animated)
+## 🔄 CI/CD Workflow 
 
 <p align="center">
   <img src="./assets/workflow.svg" alt="CI/CD Workflow Animation"/>
