@@ -4,7 +4,7 @@
 variable "aws_region" {
   description = "AWS region for resources"
   type        = string
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 variable "environment" {
@@ -22,7 +22,7 @@ variable "project_name" {
 variable "instance_type" {
   description = "EC2 instance type for application server"
   type        = string
-  default     = "t3.micro"
+  default     = "t2.micro"
 }
 
 variable "jenkins_instance_type" {
