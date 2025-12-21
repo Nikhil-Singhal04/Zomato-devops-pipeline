@@ -5,8 +5,9 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" width="70"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" width="70"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" width="70"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/aws/aws-original.svg" width="70"/>
+  <!-- <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/aws/aws-original.svg" width="70"/> -->
 </p>
+
 
 <p align="center">
   <b>An end-to-end food delivery application with complete DevOps automation</b>
@@ -16,7 +17,7 @@
 
 ## 🎯 Project Overview
 
-FoodHub is a **full-stack food delivery application** (similar to Zomato/Swiggy) integrated with a **real-world DevOps CI/CD pipeline**.
+FoodHub is a **full-stack food delivery application** integrated with a **real-world DevOps CI/CD pipeline**.
 
 This project demonstrates how modern applications are:
 
@@ -52,7 +53,7 @@ This project demonstrates how modern applications are:
 
 ---
 
-## 🔄 CI/CD Workflow (Animated)
+## 🔄 CI/CD Workflow 
 
 <p align="center">
   <img src="./assets/workflow.svg" alt="CI/CD Workflow Animation"/>
